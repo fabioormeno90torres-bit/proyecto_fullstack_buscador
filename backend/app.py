@@ -4,7 +4,8 @@ import sqlite3
 import os
 
 app = Flask(__name__)
-CORS(app)  # Abre los permisos de seguridad para que React se conecte
+# Configuración CORS explícita para producción
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 DB_PATH = os.path.join(os.path.dirname(__file__), 'database.db')
 

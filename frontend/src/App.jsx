@@ -16,7 +16,7 @@ function App() {
   const [mensajeBuscador, setMensajeBuscador] = useState('');
 
   // Cambiar por la URL de Render al subir a producción
-  const BASE_URL = "http://127.0.0.1:5000/api";
+  const BASE_URL = "https://proyecto-fullstack-buscador.onrender.com/api";
 
   const handleLogin = async (e) => {
     e.preventDefault();
